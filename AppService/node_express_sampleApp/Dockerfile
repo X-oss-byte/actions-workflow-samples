@@ -9,3 +9,6 @@ COPY . .
 
 EXPOSE 8080 80
 CMD [ "npm", "start" ]
+use most suitable node 
+update : test 
+
