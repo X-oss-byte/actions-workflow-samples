@@ -1,27 +1,4 @@
-# Set up Secrets in GitHub Action workflows 
-
-[GitHub Secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets) are encrypted and allow you to store sensitive information, such as access tokens, in your repository.
-
-You could use GitHub secrets to store your Azure Credentials, Publish profile of your Web app, container registry credentials or any such sensitive details which are required to automate your CI/CD workflows using GitHub Actions. 
-
-## Creating secrets
-
-1. On GitHub, navigate to the main page of the repository.
-1. Under your repository name, click on the "Settings" tab.
-1. In the left sidebar, click Secrets.
-1. On the right bar, click on "Add a new secret"
-   ![](images/create-secret.png)
-1. Type a name for your secret in the "Name" input box.
-1. Type the value for your secret.
-1. Click Add secret.
-   ![](images/Add-secret-name-value.png)
-   
-   
-## Consume secrets in your workflow
-
-To consume a secret within an action workflow, set the secret as an input or environment variable in your workflow. 
-Review the action's README file to learn about which inputs and environment variables the action expects. 
-For example, most of the [Azure actions](https://github.com/Azure/actions) would need AZURE_CREDENTIALS to be set as a secret.
+most of the [Azure actions](https://github.com/Azure/actions) would need AZURE_CREDENTIALS to be set as a secret.
 For more information, see ["Workflow syntax for GitHub Actions."](https://help.github.com/en/articles/workflow-syntax-for-github-actions/#jobsjob_idstepsenv)
 
 ```yaml  
