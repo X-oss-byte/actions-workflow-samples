@@ -10,11 +10,16 @@
     "name": "alagrawa"
   },
   "dependencies": {
+ snyk-upgrade-e5b381dbed78563931dfbafc59fb5342
     "applicationinsights": "^1.0.0",
     "body-parser": "^1.20.2",
+
+    "applicationinsights": "^1.8.10",
+    "body-parser": "^1.15.0",
+
     "cookie-parser": "^1.4.0",
     "debug": "^2.2.0",
-    "express": "^4.14.0",
+    "express": "^4.18.2",
     "morgan": "^1.9.1",
     "pug": "^2.0.0-beta6",
     "serve-favicon": "^2.3.0",
